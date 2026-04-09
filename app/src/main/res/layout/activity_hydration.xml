@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#2196F3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HydrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Hydration Alert"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/progressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Goal: 65%"
+                android:textColor="#2196F3"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"/>
+
+            <ProgressBar
+                android:id="@+id/hydrationProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:progress="65"
+                android:max="100"
+                android:progressTint="#4CAF50"
+                android:scaleY="2" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/hydra"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#0A5478">
+
+        <TextView
+            android:id="@+id/hydrationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hydration\n\na) Facts\n\nThe human body is composed of approximately 60% water.\n\nDifferent organs require different levels of saturation to function optimally:\n\n• The Brain and Heart: Roughly 73% water.\n• The Lungs: About 83% water.\n• The Skin: Contains 64% water.\n\nb) Cognitive Performance and Focus\n\nEven mild dehydration—defined as a 1% to 3% loss of body weight in fluid—can impair many aspects of brain function.\n\ni. The Impact: This often manifests as reduced concentration, increased frequency of headaches, and diminished memory performance.\n\nii. The Fix: Consistent (micro-sipping) throughout the day is often more effective than chugging large amounts at once.\n\nc) Hydration Sources (Beyond the Glass)\n\ni. Food Intake: About 20% of daily fluid intake comes from food (watermelon, cucumbers, etc.).\n\nii. Caffeine: Moderate consumption of coffee and tea still contributes significantly to net fluid gain."
+            android:textSize="18sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/amarante"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

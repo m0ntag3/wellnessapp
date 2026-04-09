@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#065210"
+    android:fillViewport="true"
+    tools:context=".ExerciseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:background="@drawable/shape3"
+            android:text="Exercises"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/exer"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#97C597">
+
+            <TextView
+                android:id="@+id/recipesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nEXERCISE FACTS\n1.The Afterburn Effect (EPOC)\n=High-intensity interval training (HIIT) or heavy resistance training doesn't just burn calories during the workout.\n-Through a process called Excess Post-exercise Oxygen Consumption (EPOC), your metabolism remains elevated for 8 to 24 hours after a vigorous session.\n\n2.Muscle vs. Metabolism\n-Muscle tissue is metabolically expensive, meaning it burns energy even when you aren't moving.\n\-Increasing your muscle mass by just 1kg can increase your Basal Metabolic Rate (BMR) by up to 100 calories per day.\n\n3.The Stress Buffer Logic\n-Exercise is technically a form of physical stress, but it teaches the brain how to handle emotional stress.\n-Physical activity forces the cardiovascular, renal, and muscular systems to communicate closely. This (workout) of the body’s communication system makes you more resilient to cortisol (the stress hormone).\n\n4.Brain Plasticity and BDNF\n-Exercise actually helps grow your brain by releasing a protein called BDNF. \n-(Brain-Derived Neurotrophic Factor)\BDNF acts like (Miracle-Gro) for the brain, supporting the survival of existing neurons and encouraging the growth of new ones."
+                android:textSize="17sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="20dp"
+                android:textColor="#212121"
+                android:fontFamily="@font/amarante"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

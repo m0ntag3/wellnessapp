@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4361EE"
+    android:fillViewport="true"
+    tools:context=".WeeklyGoalsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:background="@drawable/shape2"
+            android:text="Weekly Goals"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/goals"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#5F6FBA">
+
+            <TextView
+                android:id="@+id/recipesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nI.Physical Vitality\n\n-Active Minutes: Aim for 150 minutes of moderate intensity activity (like brisk walking) per week.\n-The Every Hour Rule: Stand up and stretch for 2 minutes every hour during work or study sessions.\n-Strength Foundations: Complete 2 sessions of bodyweight exercises (push-ups, squats, or planks).\n-Step Milestone: Reach a personalized daily step goal (e.g., 7,000 steps) for at least 5 out of 7 days.\n\nII.Nutrition and Hydration\n\n-The H2O Habit: Drink 2 liters of water daily for the entire week.\n-Colorful Plates: Include at least two different colors of vegetables in every dinner.\n-Mindful Eating: Spend at least 20 minutes eating one meal a day without any digital distractions (phone or TV).\n-Home-Cooked Streak: Prepare at least 4 meals from scratch to better control ingredients and portions.\n\nIII.Mental and Emotional Balance\n\n-Daily Stillness: Practice 5 to 10 minutes of guided meditation or deep breathing exercises each morning.\n-Gratitude Log: Write down three things you are grateful for before going to bed every night.\n-Digital Sunset: Turn off all electronic screens 30 minutes before sleep to improve rest quality.\n-Single-Tasking: Focus on one major task at a time for 60 minutes without switching tabs or checking notifications.\n\nIV.Rest and Recovery\n\n-Consistent Rhythm: Go to bed and wake up within the same 30-minute window every day, even on weekends.\n-The 7-Hour Club: Track sleep to ensure a minimum of 7 hours of rest for at least 5 nights.\n-Unplugged Day: Dedicate Sunday (or any chosen day) to a 4-hour no-tech period to reset."
+                android:textSize="17sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="20dp"
+                android:textColor="#212121"
+                android:fontFamily="@font/amarante"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

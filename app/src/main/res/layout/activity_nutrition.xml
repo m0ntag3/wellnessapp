@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5EBE0"
+    android:fillViewport="true"
+    tools:context=".NutritionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:background="@drawable/shape2"
+            android:text="Nutrition"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/nute"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch Ad for Reward" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#CAC46F">
+
+            <TextView
+                android:id="@+id/recipesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n1. The Plate Method Basics\n\n-Well visualize your meals.\n\n•50% Fiber: Fill half your plate with non-starchy vegetables (greens, peppers, broccoli).\n•25% Protein: A palm-sized portion of lean protein (tofu, chicken, fish, or beans).\n•25% Complex Carbs: A fist-sized portion of slow-burning fuel (quinoa, sweet potato, brown rice).\n•Healthy Fats: Aim for a thumb-sized portion (avocado, nuts, olive oil).\n\n2. Smart Hydration\n\n-Hydration is the most underrated aspect of metabolic health and mental clarity.\n\n•The Thirst Trick: Sometimes the brain confuses thirst for hunger. Suggest users drink a glass of water and wait 15 minutes before reaching for a snack.\n•Electrolyte Balance: If users are active, remind them that water isn't enough; they need a pinch of sea salt or magnesium to actually absorb that hydration.\n\n3.Focus on (Crowding Out)\n\n-What to add to your current diet\n\n•Two cups of spinach or sautéed mushrooms to it.\n•The Fiber Goal: Aim for 25–30g of fiber daily. It stabilizes blood sugar and keeps the gut microbiome happy.\n\n4.Mindful Eating Habits\n\n-How we eat is often as important as what we eat.\n\n•The 20-Minute Rule: It takes about 20 minutes for your stomach to signal to your brain that you are full.\n•Eat Without Screens: Distracted eating leads to overconsumption. Encourage a (no-phone zone) during meals.\n•The 80% Full Rule: Borrowed from the Japanese concept of Hara Hachi Bu—stop eating when you feel satisfied, not stuffed."
+                android:textSize="17sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="20dp"
+                android:textColor="#212121"
+                android:fontFamily="@font/amarante"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

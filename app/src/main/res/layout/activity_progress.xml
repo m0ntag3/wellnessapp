@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#133856"
+    android:fillViewport="true"
+    tools:context=".ProgressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:background="@drawable/shape3"
+            android:text="Progress"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/wgoals"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#3897C8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nA.The Non-Scale Victory\n\n-Progress isn't just a number. Improved sleep quality and steady energy levels throughout the afternoon are often the first signs that your nutrition is working, even before the scale moves.\n\nB.Muscle vs Water Weight\n\n-If your weight fluctuates by 1–2kg in a single day, don't panic! This is usually (water weight) caused by glycogen storage or sodium levels, not a setback in your long-term goals.\n\nC.Metabolic Adaptation\n\n-Small, consistent changes are more effective than crash diets. Consistent movement helps maintain your Basal Metabolic Rate (BMR), ensuring your body burns fuel efficiently even while you rest.\n\nD.The 21-Day Rule\n\n-It takes approximately 21 days for the brain to build a new neural pathway for a habit. If you've made it through the first three weeks, your Progress is now becoming your Lifestyle.\n\nE.Hydration and Brain Power\n\n•Even 2% dehydration can lead to a significant drop in focus and physical performance. Checking your Water Progress is the easiest way to instantly boost your mood."
+                android:textSize="17sp"
+                android:lineSpacingExtra="6dp"
+                android:padding="20dp"
+                android:textColor="#212121"
+                android:fontFamily="@font/amarante"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>
