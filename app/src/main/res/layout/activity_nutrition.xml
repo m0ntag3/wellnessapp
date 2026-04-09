@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="#F5EBE0"
     android:fillViewport="true"
-    tools:context=".NutritionActivity">
+    tools:context=".NutritionAdvice">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,18 +36,15 @@
             android:layout_marginBottom="16dp"
             android:scaleType="fitCenter"/>
 
-        <Button
-            android:id="@+id/reward"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Watch Ad for Reward" />
+
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="#CAC46F">
+            app:cardBackgroundColor="#CAC46F"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background">
 
             <TextView
                 android:id="@+id/recipesText"
@@ -61,6 +58,15 @@
                 android:fontFamily="@font/amarante"/>
 
         </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/reward"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background"
+            android:text="Claim your Grants via sponsored message."
+            android:layout_marginTop="10dp"/>
 
     </LinearLayout>
 

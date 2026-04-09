@@ -15,18 +15,20 @@ import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 
 class NutritionAdvice : AppCompatActivity() {
-
+// Safecall(?) Prevents application from crashing when the Reward Ad is prompted, yet it is not in avail.
     var rewardedAd: RewardedAd? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_nutrition)
-        //Load rewarded ads
+
+        //Invoke the function for loading rewarded ads
         loadRewardedAd(this)
-        //Show rewarded ad on Button Click
-        val reward = findViewById<Button>(R.id.reward)
-        reward.setOnClickListener{
+
+        //Find the button using its id/Show rewarded ad on Button Click
+        val rewardButton = findViewById<Button>(R.id.reward)
+        rewardButton.setOnClickListener{
             showRewardedAd(this)
         }
 

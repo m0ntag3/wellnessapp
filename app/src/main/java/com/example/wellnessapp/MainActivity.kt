@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         }
 //        =======================================
         NutritionButton.setOnClickListener {
-            val intent = Intent(applicationContext, NutritionActivity::class.java)
+            val intent = Intent(applicationContext, NutritionAdvice::class.java)
             startActivity(intent)
         }
 //        =========================================
